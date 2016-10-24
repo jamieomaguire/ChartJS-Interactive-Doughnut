@@ -5,6 +5,7 @@ Chart.defaults.global.defaultFontColor = '#333';
 Chart.defaults.global.legend.labels.padding = 40;
 // Chart.defaults.global.legend.position = 'left';
 Chart.defaults.global.tooltips.enabled = false;
+Chart.defaults.global.elements.arc.borderWidth = 3;
 
 
 var doughnutChart = new Chart(CHART, {
@@ -32,7 +33,7 @@ var doughnutChart = new Chart(CHART, {
     }
 });
 // data array
-var dataArray = douighnutChart.chart.config.data.datasets[0].data;
+var dataArray = doughnutChart.chart.config.data.datasets[0].data;
 
 // Good entry
 var goodEntryBtn = document.getElementById('good-btn');
