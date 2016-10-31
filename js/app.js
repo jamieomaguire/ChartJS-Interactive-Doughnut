@@ -1,8 +1,9 @@
-var CHART = document.getElementById("doughnutChart");
+var CHART = document.getElementById('doughnutChart');
 
 Chart.defaults.global.defaultFontSize = 15;
 Chart.defaults.global.defaultFontColor = '#333';
 Chart.defaults.global.legend.labels.padding = 40;
+
 // Chart.defaults.global.legend.position = 'left';
 Chart.defaults.global.tooltips.enabled = false;
 Chart.defaults.global.elements.arc.borderWidth = 3;
@@ -16,15 +17,15 @@ var doughnutChart = new Chart(CHART, {
             {
                 data: [35, 10, 15],
                 backgroundColor: [
-                    "#68D286",
-                    "#FBAD2F",
-                    "#EB585C"
+                    '#68D286',
+                    '#FBAD2F',
+                    '#EB585C'
                 ],
                 hoverBackgroundColor: [
-               "#68D286",
-               "#FBAD2F",
-               "#EB585C"
-                ]
+               '#68D286',
+               '#FBAD2F',
+               '#EB585C'
+           ]
             }
         ]
     },
@@ -39,21 +40,21 @@ var dataArray = doughnutChart.chart.config.data.datasets[0].data;
 var goodEntryBtn = document.getElementById('good-btn');
 goodEntryBtn.onclick = function() {
     dataArray[0]+=5;
-    barChart.update();
+    doughnutChart.update();
 }
 
 // Medium entry
 var medEntryBtn = document.getElementById('med-btn');
 medEntryBtn.onclick = function() {
     dataArray[1]+=5;
-    barChart.update();
+    doughnutChart.update();
 }
 
 // Bad entry
 var badEntryBtn = document.getElementById('bad-btn');
 badEntryBtn.onclick = function() {
     dataArray[2]+=5;
-    barChart.update();
+    doughnutChart.update();
 }
 
 
@@ -62,5 +63,5 @@ badEntryBtn.onclick = function() {
 // var removeEntryBtn = document.getElementById('remove-btn');
 // removeEntryBtn.onclick = function() {
 //     dataArray[0]-=5;
-//     barChart.update();
+//     doughnutChart.update();
 // }
