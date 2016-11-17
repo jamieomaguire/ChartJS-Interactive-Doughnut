@@ -1,2 +1,2 @@
 # chartjs-experiments
-Acquainting myself with chartjs for a university project. I am focusing mostly on changing the values with buttons and exploring customisation options. 
+Using ChartJS to create a Doughnut Chart, with added interactivity to increase and decrease values. This is for part of a larger project at University.
